@@ -19,12 +19,12 @@ int main(int argc, char** argv)
     unsigned int frameHeight   = video.get(CV_CAP_PROP_FRAME_HEIGHT);
     
     // VideoWriter object
-    cv::VideoWriter myVideoWriter("processedSampleVideo.avi", CV_FOURCC('M','J','P','G'), 30, cv::Size(frameWidth,frameHeight));
+    cv::VideoWriter myVideoWriter("processedSampleVideo.avi", CV_FOURCC('H','2','6','4'), 30, cv::Size(frameWidth,frameHeight));
     
     cv::Mat frame;
     bool escape_pressed     = false;
     unsigned int frameCount  = 0;
-    unsigned int numOfFramesInVideo = 800;//video.get(CAP_PROP_FRAME_COUNT);
+    unsigned int numOfFramesInVideo = 1000;//video.get(CAP_PROP_FRAME_COUNT);
     
     // Capture and display frame until user requests exit
     while((!escape_pressed)||(frameCount<=1000))

@@ -14,4 +14,3 @@ CTestTestfile.cmake
 _deps
 .DS_Store
 *.out
-OutputFromContainer
